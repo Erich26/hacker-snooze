@@ -5,12 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacker Snooze</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="body-container">
+        <!-- HEADER FEATURES -->
+        <!-- desktop nav -->
+        <nav class="navbar navbar-expand-lg navbar-light header" >
+            <a class="navbar-brand" href="#"><img class="home-icon" src="asset/svg/hacker-news.svg" alt="icon"></a>
+                <div class="mobile">
+                    <a href="#" id="topstories"><span class="m-nav-link linked-nav active">Trending</span></a>
+                    <a href="#" id="askstories"><span class="m-nav-link linked-nav">Ask</span></a>
+                </div>
+                <div class="desktop">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" id="topstories" href="#"> <span class="linked-nav">Trending</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="askstories" href="#"> <span class="linked-nav">Ask</span></a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
 
+        <!-- MAIN CONTENTS -->
+        <div class="main-contents">
+            <ol class="stories hidden">
+            </ol>
+            <div class="comment-section">
+
+            </div>
+            <div class="loader">
+
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="bottom-navs">
+                <button class="btn btn-primary back">Back</button>
+                <p class="page-display"></p>
+                <button class="btn btn-primary next">Next</button>
+            </div>
+            <!-- <div class="back-btn mobile"><span>Back</span></div> -->
+            <div class="bottom-notes">
+                <p>Applications are open</p>
+                <p>Guidelines | FAQ | Lists | API | Security | Legal | Apply | Contact</p>
+            </div>
+        </div>
+    </div>
     
-
+    <script src="jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
